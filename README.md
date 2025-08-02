@@ -1,4 +1,3 @@
-Here is the uniquely styled README.md file for your GitHub repository, entirely in English. You can copy this and paste it into a new file named README.md in your project's main folder.
 🎨 AI Image Upscaling Web App
 This is a unique web application created to allow users to upload images and receive a simulated upscaled version. The project is structured with a separated front-end and back-end, providing a solid foundation for building a fully functional image upscaling service.
 ✨ Key Features
