@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate AI Upscaler</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
+        body {
+            background: linear-gradient(270deg, #1a1a1a, #2a2a2a, #1a1a1a);
+            background-size: 600% 600%;
+            animation: gradientAnimation 20s ease infinite;
+            color: #f5f5f5;
+            font-family: 'Montserrat', sans-serif;
+            text-align: center;
+            padding: 50px 20px;
+            margin: 0;
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 3.5em;
+            color: #8c7ae6;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.2em;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: rgba(42, 42, 42, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.7);
+            backdrop-filter: blur(5px);
+        }
+
+        .upload-form {
+            margin-top: 20px;
+        }
+
+        #image-input {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            background-color: #333;
+            color: #f5f5f5;
+            border: 1px solid #444;
+            border-radius: 8px;
+            box-sizing: border-box;
+            transition: all 0.3s ease;
+        }
+        
+        #image-input:hover, #image-input:focus {
+            border-color: #8c7ae6;
+            box-shadow: 0 0 10px rgba(140, 122, 230, 0.5);
+            outline: none;
+        }
+
+        .upload-button {
+            background-color: #8c7ae6;
+            color: #1a1a1a;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.1em;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .upload-button:hover {
+            background-color: #6a59c3;
+            box-shadow: 0 0 15px rgba(140, 122, 230, 0.7);
+        }
+
+        #result {
+            margin-top: 30px;
+            padding: 20px;
+            background-color: #1a1a1a;
+            border-radius: 8px;
+            border: 2px dashed #8c7ae6;
+            min-height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.2em;
+            transition: all 0.5s ease;
+        }
+
+        #result img {
+            border-radius: 8px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+        }
+        
+        .download-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #3d3d3d;
+            color: #8c7ae6;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .download-button:hover {
+            background-color: #555;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Ultimate AI Upscaler!</h1>
+        <p>Upload an image to get a high-quality upscaled version. Fast, easy, and completely unique.</p>
+
+        <form class="upload-form" id="upload-form">
+            <input type="file" id="image-input" accept="image/*" required>
+            <button type="submit" class="upload-button">Upscale Image</button>
+        </form>
+
+        <div id="result">
+            Your upscaled image will appear here.
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
